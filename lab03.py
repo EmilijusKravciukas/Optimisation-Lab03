@@ -49,19 +49,11 @@ def GradientDescent(func, xStart, gamma = 0.001, tol=1e-4):
     x = np.copy(xStart)
 
     gradient = np.array(NumericalGradient(func, x))
-
+    
     while np.linalg.norm(gradient) >= tol:
         x = x - gamma * gradient
         gradient = np.array(NumericalGradient(func, x))
         iterationCount += 1
-        # if iterationCount % 5 == 0 or iterationCount == 1:
-        #     print(f"GD Iteration {iterationCount}: x = {x}, gradient norm = {np.linalg.norm(gradient)}")
-        #     print(f"Gradient Descent completed:")
-        #     print(f" Solution: {x}")
-        #     print(f" Function value: {func(x)}")
-        #     print(f" Function calls: {functionCallCount}")
-        #     print(f" Iterations: {iterationCount}")
-
 
     gradient = np.array(NumericalGradient(func, x))
     print(f"GD Iteration {iterationCount}: x = {x}, gradient norm = {np.linalg.norm(gradient)}")
@@ -73,8 +65,9 @@ def GradientDescent(func, xStart, gamma = 0.001, tol=1e-4):
     functionCallCount = 0
     return x
 
-currentX = np.copy(xTest)
+currentX = np.copy(xm)
 
 for r in rValues:
     passedPenFunc = lambda x : PenalizedFunc(OptFunc, x, r)
     currentX = GradientDescent(passedPenFunc, currentX)
+
