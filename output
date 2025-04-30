@@ -1,0 +1,24 @@
+GD Iteration 25249: x = [0.52578157 0.52524773 0.52545505], gradient norm = 9.9981839444026e-05
+Gradient Descent completed:
+ Solution: [0.52578157 0.52524773 0.52545505]
+ Function value: -0.1019649793639639
+ Function calls: 151507
+ Iterations: 25249
+GD Iteration 632: x = [0.41908066 0.4185583  0.41876111], gradient norm = 9.935248195131795e-05
+Gradient Descent completed:
+ Solution: [0.41908066 0.4185583  0.41876111]
+ Function value: -0.07071312153180737
+ Function calls: 3805
+ Iterations: 632
+GD Iteration 61: x = [0.40957187 0.40905005 0.40925265], gradient norm = 9.641900440143749e-05
+Gradient Descent completed:
+ Solution: [0.40957187 0.40905005 0.40925265]
+ Function value: -0.0683024498373787
+ Function calls: 379
+ Iterations: 61
+GD Iteration 21: x = [0.40863194 0.40811176 0.40831373], gradient norm = 9.55198601731948e-05
+Gradient Descent completed:
+ Solution: [0.40863194 0.40811176 0.40831373]
+ Function value: -0.06806741601616767
+ Function calls: 139
+ Iterations: 21
